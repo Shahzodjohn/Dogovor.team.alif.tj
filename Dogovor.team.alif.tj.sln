@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dogovor.team.alif.tj", "Dogovor.team.alif.tj\Dogovor.team.alif.tj.csproj", "{73A6F3D1-5BE8-48DC-BCC2-A9D975E8753D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dogovor.team.alif.tj", "Dogovor.team.alif.tj\Dogovor.team.alif.tj.csproj", "{73A6F3D1-5BE8-48DC-BCC2-A9D975E8753D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionProvider", "ConnectionProvider\ConnectionProvider.csproj", "{2E708A47-BF83-453A-B252-2846CC3B06DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectionProvider", "ConnectionProvider\ConnectionProvider.csproj", "{2E708A47-BF83-453A-B252-2846CC3B06DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entities\Entity.csproj", "{F831BEEB-F43D-4871-9A4D-C6E2304393CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity", "Entities\Entity.csproj", "{F831BEEB-F43D-4871-9A4D-C6E2304393CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repositories\Repository.csproj", "{24813827-A0D2-467B-944D-8CBDB36C0D4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repositories\Repository.csproj", "{24813827-A0D2-467B-944D-8CBDB36C0D4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Services\Service.csproj", "{23FB0D77-1699-45F3-8A84-421F723B3133}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Services\Service.csproj", "{23FB0D77-1699-45F3-8A84-421F723B3133}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
