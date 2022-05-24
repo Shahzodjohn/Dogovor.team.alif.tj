@@ -3,7 +3,7 @@ WORKDIR /app
 
 # Copy csproj and restore as distinct layers
 COPY . .
-WORKDIR /app/Dogovor
+WORKDIR /app/Dogovor.team.alif.tj
 
 EXPOSE 7254
 EXPOSE 5254
