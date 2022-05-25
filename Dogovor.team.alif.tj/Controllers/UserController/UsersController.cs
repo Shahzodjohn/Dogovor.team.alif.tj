@@ -61,7 +61,7 @@ namespace DogovorProject.Controllers
         public ActionResult VerifyUser(RandomNumberDTO dto)
         {
             var UserEmail = _userService.VerifyUser(dto);
-            if (UserEmail == null) { return BadRequest(); };
+            if (UserEmail.Contains("Error")) { return BadRequest(UserEmail); };
             return Ok(new Response { Status = "Ok", Message = "Verification success!" });
         }
         [HttpPut("UpdatePassword")]

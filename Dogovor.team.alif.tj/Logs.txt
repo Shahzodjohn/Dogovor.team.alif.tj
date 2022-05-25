@@ -1,0 +1,466 @@
+
+Log Entry : Tue, 24 May 2022 12:12:57 GMT 12:12:57
+  : 400 || Error while adding a user, please enter a valid email address!
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:13:34 GMT 12:13:34
+  : 400 || This User does not exists!
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:13:45 GMT 12:13:45
+  : 400 || Error while adding a user, please enter a valid email address!
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:19:19 GMT 12:19:19
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:20:50 GMT 12:20:50
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:29:40 GMT 12:29:40
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:32:24 GMT 12:32:24
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:38:13 GMT 12:38:13
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:41:59 GMT 12:41:59
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:46:15 GMT 12:46:15
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:48:24 GMT 12:48:24
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:49:53 GMT 12:49:53
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:50:43 GMT 12:50:43
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:50:43 GMT 12:50:43
+  : 400 || Error while sending mail message
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:52:18 GMT 12:52:18
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:52:18 GMT 12:52:18
+  : 400 || Error while sending mail message
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:52:55 GMT 12:52:55
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:53:05 GMT 12:53:05
+  : 400 || Error while sending mail message
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:53:33 GMT 12:53:33
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 12:54:23 GMT 12:54:23
+  : 400 || Error while sending mail message
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 13:00:24 GMT 13:00:24
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 13:06:51 GMT 13:06:51
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 13:08:55 GMT 13:08:55
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 13:10:59 GMT 13:10:59
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 13:15:32 GMT 13:15:32
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 13:19:14 GMT 13:19:14
+  : 400 || User not found!
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 13:19:39 GMT 13:19:39
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 13:21:14 GMT 13:21:14
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 13:25:58 GMT 13:25:59
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 13:48:55 GMT 13:48:55
+  : 400 || User not found!
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 13:51:43 GMT 13:51:43
+  : Error
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 13:53:45 GMT 13:53:45
+  : Error || SMTP ERROR ==> The remote certificate was rejected by the provided RemoteCertificateValidationCallback.
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 13:54:56 GMT 13:54:56
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+-----------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 14:23:43 GMT 14:23:43
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 14:27:47 GMT 14:27:47
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 14:29:16 GMT 14:29:16
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 14:31:49 GMT 14:31:49
+  : Error || SMTP ERROR ==> Value cannot be null. (Parameter 'text')
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 14:40:29 GMT 14:40:29
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:13:19 GMT 15:13:19
+  : 400 || User not found!
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:13:49 GMT 15:13:49
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+When connecting to an SMTP service, port 587 is typically reserved for plain-text connections. If
+you intended to connect to SMTP on the SSL port, try connecting to port 465 instead. Otherwise,
+if you intended to use STARTTLS, make sure to use the following code:
+
+client.Connect ("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:14:19 GMT 15:14:19
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+When connecting to an SMTP service, port 587 is typically reserved for plain-text connections. If
+you intended to connect to SMTP on the SSL port, try connecting to port 465 instead. Otherwise,
+if you intended to use STARTTLS, make sure to use the following code:
+
+client.Connect ("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:15:28 GMT 15:15:28
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:20:49 GMT 15:20:49
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+When connecting to an SMTP service, port 25 is typically reserved for plain-text connections. If
+you intended to connect to SMTP on the SSL port, try connecting to port 465 instead. Otherwise,
+if you intended to use STARTTLS, make sure to use the following code:
+
+client.Connect ("smtp.gmail.com", 25, SecureSocketOptions.StartTls);
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:22:20 GMT 15:22:20
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+When connecting to an SMTP service, port 25 is typically reserved for plain-text connections. If
+you intended to connect to SMTP on the SSL port, try connecting to port 465 instead. Otherwise,
+if you intended to use STARTTLS, make sure to use the following code:
+
+client.Connect ("smtp.gmail.com", 25, SecureSocketOptions.StartTls);
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:23:04 GMT 15:23:04
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+When connecting to an SMTP service, port 587 is typically reserved for plain-text connections. If
+you intended to connect to SMTP on the SSL port, try connecting to port 465 instead. Otherwise,
+if you intended to use STARTTLS, make sure to use the following code:
+
+client.Connect ("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:24:41 GMT 15:24:41
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+When connecting to an SMTP service, port 587 is typically reserved for plain-text connections. If
+you intended to connect to SMTP on the SSL port, try connecting to port 465 instead. Otherwise,
+if you intended to use STARTTLS, make sure to use the following code:
+
+client.Connect ("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:24:42 GMT 15:24:42
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+When connecting to an SMTP service, port 587 is typically reserved for plain-text connections. If
+you intended to connect to SMTP on the SSL port, try connecting to port 465 instead. Otherwise,
+if you intended to use STARTTLS, make sure to use the following code:
+
+client.Connect ("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:25:41 GMT 15:25:41
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+When connecting to an SMTP service, port 587 is typically reserved for plain-text connections. If
+you intended to connect to SMTP on the SSL port, try connecting to port 465 instead. Otherwise,
+if you intended to use STARTTLS, make sure to use the following code:
+
+client.Connect ("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:27:15 GMT 15:27:15
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+When connecting to an SMTP service, port 587 is typically reserved for plain-text connections. If
+you intended to connect to SMTP on the SSL port, try connecting to port 465 instead. Otherwise,
+if you intended to use STARTTLS, make sure to use the following code:
+
+client.Connect ("smtp-relay.gmail.com", 587, SecureSocketOptions.StartTls);
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:30:30 GMT 15:30:30
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+When connecting to an SMTP service, port 587 is typically reserved for plain-text connections. If
+you intended to connect to SMTP on the SSL port, try connecting to port 465 instead. Otherwise,
+if you intended to use STARTTLS, make sure to use the following code:
+
+client.Connect ("smtp-relay.gmail.com", 587, SecureSocketOptions.StartTls);
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:37:00 GMT 15:37:00
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:38:55 GMT 15:38:55
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:39:25 GMT 15:39:25
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:39:28 GMT 15:39:28
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:40:18 GMT 15:40:18
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:41:46 GMT 15:41:46
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:41:48 GMT 15:41:48
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:41:50 GMT 15:41:50
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:42:29 GMT 15:42:29
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:42:31 GMT 15:42:31
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:42:34 GMT 15:42:34
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:42:36 GMT 15:42:36
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:42:37 GMT 15:42:37
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:42:39 GMT 15:42:39
+  : Error || SMTP ERROR ==> An error occurred while attempting to establish an SSL or TLS connection.
+
+The server's SSL certificate could not be validated for the following reasons:
+• The server certificate has the following errors:
+  • Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:53:56 GMT 15:53:56
+  : Error || Invalid code
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:54:04 GMT 15:54:04
+  : Error || Invalid code
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:54:09 GMT 15:54:09
+  : Error || Invalid code
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 15:59:56 GMT 15:59:56
+  : Error || Invalid code
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 16:04:45 GMT 16:04:45
+  : Error || Invalid code
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 16:18:49 GMT 16:18:49
+  : Error || Invalid user's code, try to resend a valid code!
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 16:18:51 GMT 16:18:51
+  : Error || Invalid user's code, try to resend a valid code!
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 16:18:52 GMT 16:18:52
+  : Error || Invalid user's code, try to resend a valid code!
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 16:19:38 GMT 16:19:38
+  : Error || Invalid user's code, try to resend a valid code!
+---------------------------------------------------------------------------------------------
+
+Log Entry : Tue, 24 May 2022 16:25:30 GMT 16:25:30
+  : Error || Invalid user's code, try to resend a valid code!
+---------------------------------------------------------------------------------------------
