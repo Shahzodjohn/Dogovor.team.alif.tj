@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Repository;
+using Repository.ContractRepository;
 using Repository.Interfaces;
 using Repository.Interfaces.DepartmentRepository;
 using Repository.UserRepositories;
+using Service.ContractServices;
 using Service.Services;
 using Service.Services.MailService;
 using System.Text;
@@ -68,5 +70,12 @@ public static class ServiceBuilder
         Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
         //services.AddScoped<IDepartmentService, UserService>();
     }
+    public static void LeaseServices(this IServiceCollection Services)
+    {
+        Services.AddScoped<ILeaseContractService, LeaseContractService>();
+        Services.AddScoped<ILeaseContractRepository, LeaseContractRepository>();
+        //services.AddScoped<IDepartmentService, UserService>();
+    }
+
 }
 

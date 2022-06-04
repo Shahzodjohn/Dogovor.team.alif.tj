@@ -55,8 +55,8 @@ namespace Service.Services
             {
                 if (dto.Password != dto.RepeatPassword)
                     return response.ToLog("400", "The password doesn't match with repeated one!");
-                if (!dto.EmailAddress.Contains("@team.alif.tj"))
-                    return response.ToLog("400", "Error while adding a user, please enter a valid email address!");
+                //if (!dto.EmailAddress.Contains("@team.alif.tj"))
+                //    return response.ToLog("400", "Error while adding a user, please enter a valid email address!");
                 else
                     await _uRepository.InsertUser(dto); return "Success! User is registered!";
             }
@@ -85,22 +85,13 @@ namespace Service.Services
         }
         public async Task<string> SendEmailCode(MailResetDTO request)
         {
-            try
-            {
-                var ValidUser = await _uRepository.GetUserbyEmail(request.ToEmail);
-                if (ValidUser == null)
-                {
-                    return response.ToLog("400", "User not found!");
-                }
-                var message = await _mailService.SendEmailResetAsync(request.ToEmail);
-                if (!message.Contains("200"))
-                    return response.ToLog("400", "Error while sending mail message");
-                return message;
-            }
-            catch (Exception ex)
-            {
-                return response.ToLog(null, "400 || Message was not sent!" + ex.InnerException.ToString() );
-            }
+            var ValidUser = await _uRepository.GetUserbyEmail(request.ToEmail);
+            if (ValidUser == null)
+                return response.ToLog("400", "User not found!");
+            var message = await _mailService.SendEmailResetAsync(request.ToEmail);
+            if (!message.Contains("200"))
+                return response.ToLog(null, message);
+            return message;
         }
 
         public string VerifyUser(RandomNumberDTO dto)
@@ -109,18 +100,27 @@ namespace Service.Services
             {
                 var message = _uRepository.GetUserByEmailAndCode(dto);
                 if (message == null)
-                    return response.ToLog("Error", "Invalid code");
+                    return response.ToLog("Error", "Invalid user's code, try to resend a valid code!");
                 return message;
+            }
+            catch (Exception ex)
+            {
+                return response.ToLog(null, "400 || Error while checking out the code!" + ex.Message.ToString());
+            }
+        }
+
+        public async Task<string> ResetPassword(NewPasswordDTO dto)
+        {
+            try
+            {
+                var message = await _uRepository.ResetPassword(dto);
+                if (message == null)
+                    return response.ToLog("Error", "Invalid code");
+                return "Success";
             }
             catch (Exception ex)
             {
                 return response.ToLog(null, "400 || Error while checking out the code!" + ex.InnerException.ToString());
             }
         }
-
-        public Task<string> ResetPassword(NewPasswordDTO dto)
-        {
-            throw new NotImplementedException();
-        }
-    }
-}
+    }}

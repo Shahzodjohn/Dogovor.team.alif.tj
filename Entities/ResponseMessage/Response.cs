@@ -24,9 +24,9 @@
             {
                 writer.Write("\r\nLog Entry : ");
                 writer.WriteLine("{0} {1}", DateTime.Now.ToString("R"), DateTime.Now.ToLongTimeString());
-                writer.WriteLine("  : {0}", status == null ? "Error" : status.ToString() + " || " + message.ToString());
-                writer.WriteLine("-----------------------------------------------------------------------------------");
-                return status == null ? "Error" : status.ToString() + " || " + message.ToString();
+                writer.WriteLine("  : {0}", status == null ? "Error" + " || " + message.ToString() : status.ToString() + " || " + message.ToString());
+                writer.WriteLine("---------------------------------------------------------------------------------------------");
+                return status == null ? "Error" + " || " + message.ToString() : status.ToString() + " || " + message.ToString();
             }
         }
     }

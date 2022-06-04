@@ -14,6 +14,7 @@ builder.Services.CodeResetServices();
 builder.Services.UserServices();
 builder.Services.RoleServices();
 builder.Services.MailService();
+builder.Services.LeaseServices();
 builder.Services.DepartmentServices();
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())

@@ -1,4 +1,5 @@
-﻿using Entity.Departments;
+﻿using Entity;
+using Entity.Departments;
 using Entity.Reset;
 using Entity.Roles;
 using Entity.Users;
@@ -19,5 +20,14 @@ namespace ConnectionProvider.Context
         public DbSet<Department> Departments { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<ResetPassword> ResetPasswords { get; set; }
+        public DbSet<BankSignatoryData> BankSignatoryDatas { get; set; }
+        public DbSet<Citizenship> Citizenships { get; set; }
+        public DbSet<City> Cities { get; set; }
+        public DbSet<Contracter> Contracters { get; set; }
+        public DbSet<ContragentInfo> ContragentInfos { get; set; }
+        public DbSet<LeaseContract> LeaseContracts { get; set; }
+        public DbSet<Passport> Passports { get; set; }
+        public DbSet<PlaceAndDateofRelease> PlacesAndDatesofRelease { get; set; }
+        public DbSet<Position> Positions { get; set; }
     }
 }
