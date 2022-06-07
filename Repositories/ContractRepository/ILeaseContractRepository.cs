@@ -20,6 +20,6 @@ namespace Repository.ContractRepository
         public Task<Response> AddRentalPayment(RentalPaymentDTO dto);
         public Task<Response> AddSubrental(SubrentalDTO dto);
         public Task<Response> AddTaxes(TaxesDTO dto);
-        public Task<Response> AddAddresses(TaxesDTO dto);
+        public Task<Response> AddAddresses(AddressesDTO dto);
     }
 }

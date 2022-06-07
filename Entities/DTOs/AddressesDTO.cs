@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Entity.DTOs
 {
-    internal class AddressesDTO
+    public class AddressesDTO
     {
+        public int PathId { get; set; }
+        public string HomeAddress { get; set; }
+        public string OwnerINN { get; set; }
     }
 }
