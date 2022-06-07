@@ -20,7 +20,7 @@ namespace Repository.ContractRepository
             _context = context;
         }
 
-        public async Task<Response> InsertPlaceAndDateofRelease(PlaceAndDateofReleaseDTO releaseDTO)
+        public async Task<Response> AddPlaceAndDateofRelease(PlaceAndDateofReleaseDTO releaseDTO)
         {
                 EntityEntry<PlaceAndDateofRelease> data = null;
                 EntityEntry<LeaseContract> formApplication;
@@ -49,7 +49,7 @@ namespace Repository.ContractRepository
             return new Response { Status = "200", Message = $"OrderId => {formApplication.Entity.Id}" };
         }
 
-        public async Task<Response> InsertBankSignatoryData(BankSignatoryDataDTO releaseDTO)
+        public async Task<Response> AddBankSignatoryData(BankSignatoryDataDTO releaseDTO)
         {
             var findOrder = await _context.LeaseContracts.FindAsync(releaseDTO.OrderId);
             EntityEntry<BankSignatoryData> data = null;
@@ -81,7 +81,7 @@ namespace Repository.ContractRepository
             }
             return new Response { Status = "200", Message = "Success!" };
         }
-        public async Task<Response> InsertContragentInfo(ContragentInfoDTO contragentInfo)
+        public async Task<Response> AddContragentInfo(ContragentInfoDTO contragentInfo)
         {
             var findOrder = await _context.LeaseContracts.FindAsync(contragentInfo.OrderId);
             EntityEntry<ContragentInfo> data = null;
@@ -105,6 +105,181 @@ namespace Repository.ContractRepository
             finally
             {
                 findOrder.ContrAgentInfoId = data.Entity.Id;
+                await _context.SaveChangesAsync();
+            }
+            return new Response { Status = "200", Message = "Success!" };
+        }
+
+        public async Task<Response> AddNonresidentalLease(NonresidentalLeaseDTO dto)
+        {
+            EntityEntry<NonResidentalLease> lease = null;
+            EntityEntry<FinalizedInformationLease> FinalizedLease;
+            try
+            {
+                lease = await _context.NonResidentalLeases.AddAsync(new NonResidentalLease
+                {
+                    DucumentNumber = dto.DucumentNumber,
+                    IndividualId = dto.IndividualId,
+                    Individual = dto.Individual,
+                    IndividualEnterpreneurId = dto.IndividualEnterpreneurId,
+                    IndividualEnterpreneur = dto.IndividualEnterpreneur,
+                    LegalEntityId = dto.LegalEntityId,
+                    LegalEntity = dto.LegalEntity,
+                });
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return new Response { Status = "400 || Error while adding into route Insert Into Document!", Message = ex.InnerException.ToString() };
+            }
+            finally
+            {
+                FinalizedLease = await _context.FinalizedInformationLeases.AddAsync(new FinalizedInformationLease
+                {
+                    NonResidentalLeaseId = lease.Entity.Id
+                });
+                await _context.SaveChangesAsync();
+            }
+            return new Response { Status = "200", Message = $"PathId => {FinalizedLease.Entity.Id}" };
+        }
+
+        public async Task<Response> AddRoomInfo(RoomInfoDTO dto)
+        {
+            var findPath = await _context.FinalizedInformationLeases.FindAsync(dto.PathId);
+            EntityEntry<RoomInfo> roomInfo = null;
+            try
+            {
+                if (findPath == null)
+                    return new Response { Status = "400", Message = $"PathId => {dto.PathId} wasn't found!" };
+                roomInfo = await _context.RoomInfos.AddAsync(new RoomInfo
+                {
+                    Address = dto.Address,
+                    OwningReason = dto.OwningReason,
+                    ContractDeadline = dto.ContractDeadline,
+                    Quadrature = dto.Quadrature,
+                    DocumentDate = dto.DocumentDate,
+                });
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return new Response { Status = "400 || Error while adding into route Insert Room Info!", Message = ex.InnerException.ToString() };
+            }
+            finally
+            {
+                findPath.RoomInfoId = roomInfo.Entity.Id;
+                await _context.SaveChangesAsync();
+            }
+            return new Response { Status = "200", Message = "Success!" };
+        }
+
+        public async Task<Response> AddRentalPayment(RentalPaymentDTO dto)
+        {
+            var findPath = await _context.FinalizedInformationLeases.FindAsync(dto.PathId);
+            EntityEntry<RentalPayment> rentalPayment = null;
+            try
+            {
+                if (findPath == null)
+                    return new Response { Status = "400", Message = $"PathId => {dto.PathId} wasn't found!" };
+                rentalPayment = await _context.RentalPayment.AddAsync(new RentalPayment
+                {
+                    AreTaxesIncluded = dto.AreTaxesIncluded,
+                    RentalPrice = dto.RentalPrice,
+                    MonthlyPayment = dto.MonthlyPayment,
+                    PrePayment = dto.PrePayment,
+                    PrePaymentDeadline = dto.PrePaymentDeadline,
+                    MonthlyPaymentDeadline = dto.MonthlyPaymentDeadline,
+                    PaymentWayId = dto.PaymentWayId,
+                });
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return new Response { Status = "400 || Error while adding into route Add Rental Payment!", Message = ex.InnerException.ToString() };
+            }
+            finally
+            {
+                findPath.RoomInfoId = rentalPayment.Entity.Id;
+                await _context.SaveChangesAsync();
+            }
+            return new Response { Status = "200", Message = "Success!" };
+        }
+
+        public async Task<Response> AddSubrental(SubrentalDTO dto)
+        {
+            var findPath = await _context.FinalizedInformationLeases.FindAsync(dto.PathId);
+            EntityEntry<Subrental> subrental = null;
+            try
+            {
+                if (findPath == null)
+                    return new Response { Status = "400", Message = $"PathId => {dto.PathId} wasn't found!" };
+                subrental = await _context.Subrentals.AddAsync(new Subrental
+                {
+                    possibleSubrental = dto.possibleSubrental
+                });
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return new Response { Status = "400 || Error while adding into route Add Subrental!", Message = ex.InnerException.ToString() };
+            }
+            finally
+            {
+                findPath.RoomInfoId = subrental.Entity.Id;
+                await _context.SaveChangesAsync();
+            }
+            return new Response { Status = "200", Message = "Success!" };
+        }
+
+        public async Task<Response> AddTaxes(TaxesDTO dto)
+        {
+            var findPath = await _context.FinalizedInformationLeases.FindAsync(dto.PathId);
+            EntityEntry<Taxes> taxes = null;
+            try
+            {
+                if (findPath == null)
+                    return new Response { Status = "400", Message = $"PathId => {dto.PathId} wasn't found!" };
+                taxes = await _context.Taxes.AddAsync(new Taxes
+                {
+                    BankWithholdTaxes = dto.BankWithholdTaxes,
+                     OwnerPaysTaxes = dto.OwnerPaysTaxes
+                });
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return new Response { Status = "400 || Error while adding into route Add Taxes!", Message = ex.InnerException.ToString() };
+            }
+            finally
+            {
+                findPath.RoomInfoId = taxes.Entity.Id;
+                await _context.SaveChangesAsync();
+            }
+            return new Response { Status = "200", Message = "Success!" };
+        }
+
+        public async Task<Response> AddAddresses(AddressesDTO dto)
+        {
+            var findPath = await _context.FinalizedInformationLeases.FindAsync(dto.PathId);
+            EntityEntry<Address> address = null;
+            try
+            {
+                if (findPath == null)
+                    return new Response { Status = "400", Message = $"PathId => {dto.PathId} wasn't found!" };
+                address = await _context.Addresses.AddAsync(new Address
+                {
+                     HomeAddress = dto.HomeAddress,
+                      OwnerINN = dto.OwnerINN
+                });
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return new Response { Status = "400 || Error while adding into route Add Addresses!", Message = ex.InnerException.ToString() };
+            }
+            finally
+            {
+                findPath.RoomInfoId = address.Entity.Id;
                 await _context.SaveChangesAsync();
             }
             return new Response { Status = "200", Message = "Success!" };

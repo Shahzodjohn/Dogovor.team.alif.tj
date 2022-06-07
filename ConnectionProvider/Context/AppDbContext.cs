@@ -29,5 +29,17 @@ namespace ConnectionProvider.Context
         public DbSet<Passport> Passports { get; set; }
         public DbSet<PlaceAndDateofRelease> PlacesAndDatesofRelease { get; set; }
         public DbSet<Position> Positions { get; set; }
+        public DbSet<Address> Addresses{ get; set; }
+        public DbSet<Individual> Individuals { get; set; }
+        public DbSet<IndividualEnterpreneur> IndividualEnterpreneurs{ get; set; }
+        public DbSet<LegalEntity> LegalEntity { get; set; }
+        public DbSet<NonResidentalLease> NonResidentalLeases { get; set; }
+        public DbSet<PaymentWays> PaymentWays { get; set; }
+        public DbSet<PremisesOwner> PremisesOwners { get; set; }
+        public DbSet<RentalPayment> RentalPayment { get; set; }
+        public DbSet<RoomInfo> RoomInfos { get; set; }
+        public DbSet<Subrental> Subrentals { get; set; }
+        public DbSet<Taxes> Taxes { get; set; }
+        public DbSet<FinalizedInformationLease> FinalizedInformationLeases { get; set; }
     }
 }
