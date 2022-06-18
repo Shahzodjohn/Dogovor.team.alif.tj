@@ -9,6 +9,7 @@ namespace Entity
     public class FinalizedInformationLease
     {
         public int Id { get; set; }
+        public int? OrderId { get; set; }
         public int? LeaseContractId {get; set; }
         public int? AddressId { get; set; }
         public int? IndividualId { get; set; }

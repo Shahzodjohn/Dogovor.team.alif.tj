@@ -8,6 +8,7 @@ namespace Entity.DTOs
 {
     public class NonresidentalLeaseDTO
     {
+        public int OrderId { get; set; }
         public string DucumentNumber { get; set; }
         public int PremisesOwnerId { get; set; }
         public bool Individual { get; set; }

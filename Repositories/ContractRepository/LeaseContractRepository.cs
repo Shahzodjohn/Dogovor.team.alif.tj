@@ -136,7 +136,8 @@ namespace Repository.ContractRepository
             {
                 FinalizedLease = await _context.FinalizedInformationLeases.AddAsync(new FinalizedInformationLease
                 {
-                    NonResidentalLeaseId = lease.Entity.Id
+                    NonResidentalLeaseId = lease.Entity.Id,
+                    OrderId = dto.OrderId,
                 });
                 await _context.SaveChangesAsync();
             }

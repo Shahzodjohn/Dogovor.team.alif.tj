@@ -8,6 +8,7 @@ namespace Entity.DTOs
 {
     public class TaxesDTO
     {
+        public int PathId { get; set; }
         public bool BankWithholdTaxes { get; set; }
         public bool OwnerPaysTaxes { get; set; }
     }
